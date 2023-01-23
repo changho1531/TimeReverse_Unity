@@ -7553,7 +7553,7 @@ GameObject:
   - component: {fileID: 2006976585}
   - component: {fileID: 2006976584}
   - component: {fileID: 2006976588}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Static Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7580,7 +7580,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2006976585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7590,7 +7590,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2006976583}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a7afdc6846aa15b4c8fa1529b225c58d, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

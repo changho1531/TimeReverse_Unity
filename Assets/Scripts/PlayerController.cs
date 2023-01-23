@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //레이캐스트(NPC와 대화하기)
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             //레이는 시작 포인트, 방향 및 길이로 구성됩니다
             //루비의 발이 아닌 루비 중앙에서 수행, 루비가 바라보는 방향, 최대거리, 특정레이어만 실행을 위해 마스크에 속하지 않을시 무시
