@@ -81,7 +81,9 @@ public class PlayerController : MonoBehaviour
             {
                 //충돌이 있는지 확인한 다음 레이캐스트가 충돌한 오브젝트에서 NonPlayerCharacter 스크립트를 찾습니다.
                 //이 오브젝트에 해당 스크립트가 있는 경우 대화상자를 표시합니다.
-                Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
+                //Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
+                Debug.Log("D키를 눌러 대화를 시도합니다" );
+
                 ObjInteraction objInteraction = hit.collider.GetComponent<ObjInteraction>();
                 if (objInteraction != null)
                 {
