@@ -2523,7 +2523,6 @@ GameObject:
   - component: {fileID: 679475796}
   - component: {fileID: 679475800}
   - component: {fileID: 679475799}
-  - component: {fileID: 679475798}
   - component: {fileID: 679475797}
   m_Layer: 5
   m_Name: SoundEffect
@@ -2597,7 +2596,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 679475798}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BtnType, Assembly-CSharp
         m_MethodName: OnBtnClick
         m_Mode: 1
@@ -2609,21 +2608,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &679475798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679475795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a754f695934ec743846f5cb53766e59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentType: 4
-  buttonScale: {fileID: 679475796}
-  OptionSet: {fileID: 0}
 --- !u!114 &679475799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3094,9 +3078,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b5b9b75ebb4d145ad9ce1b6a18a66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subMenuSet: {fileID: 0}
+  subMenuSet: {fileID: 1011690244}
   optionSet: {fileID: 914215262}
-  menuSet: {fileID: 1011690244}
+  menuSet: {fileID: 0}
 --- !u!1 &728755464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3810,7 +3794,7 @@ GameObject:
   - component: {fileID: 1011690248}
   - component: {fileID: 1011690247}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: SubMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5178,6 +5162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1325167119}
+  - component: {fileID: 1325167120}
   - component: {fileID: 1325167118}
   m_Layer: 0
   m_Name: GameObject
@@ -5193,7 +5178,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325167117}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e0e87d0b56c55242901f959a9f7e558, type: 3}
   m_Name: 
@@ -5215,6 +5200,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1325167120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325167117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b5b9b75ebb4d145ad9ce1b6a18a66d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subMenuSet: {fileID: 0}
+  optionSet: {fileID: 0}
+  menuSet: {fileID: 1542402816}
 --- !u!1 &1366126108
 GameObject:
   m_ObjectHideFlags: 0
@@ -5683,10 +5683,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1513829432}
+  - component: {fileID: 1513829433}
   - component: {fileID: 1513829431}
   - component: {fileID: 1513829430}
   - component: {fileID: 1513829429}
-  - component: {fileID: 1513829428}
   m_Layer: 5
   m_Name: Canvas1
   m_TagString: Untagged
@@ -5694,18 +5694,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1513829428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513829427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f6912b34405afd428079ae79e74f839, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1513829429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5788,6 +5776,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1513829433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513829427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b5b9b75ebb4d145ad9ce1b6a18a66d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subMenuSet: {fileID: 1011690244}
+  optionSet: {fileID: 914215262}
+  menuSet: {fileID: 1542402816}
 --- !u!1 &1515293215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,10 +6027,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1542402817}
   - component: {fileID: 1542402819}
-  - component: {fileID: 1542402820}
   - component: {fileID: 1542402818}
   m_Layer: 5
-  m_Name: MenuSet
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6093,21 +6095,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542402816}
   m_CullTransparentMesh: 1
---- !u!114 &1542402820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542402816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b5b9b75ebb4d145ad9ce1b6a18a66d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subMenuSet: {fileID: 0}
-  optionSet: {fileID: 0}
-  menuSet: {fileID: 1542402816}
 --- !u!1 &1564674325
 GameObject:
   m_ObjectHideFlags: 0
@@ -14944,9 +14931,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b5b9b75ebb4d145ad9ce1b6a18a66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subMenuSet: {fileID: 0}
+  subMenuSet: {fileID: 1011690244}
   optionSet: {fileID: 914215262}
-  menuSet: {fileID: 1011690244}
+  menuSet: {fileID: 0}
 --- !u!1 &2130124326
 GameObject:
   m_ObjectHideFlags: 0
