@@ -63,12 +63,14 @@ public class Movement2D : MonoBehaviour
             //속력조절
             defaultSpeed = 1.0f;
             //박스범위 조절
-            BoxCollider2D.size = new Vector2((float)3, (float)3);
+            BoxCollider2D.size = new Vector2((float)0.2, (float)0.3);
+            BoxCollider2D.offset = new Vector2(0, (float)0.13);
         }
         else if(isGrounded == true && sit_ing == true)
         {
             defaultSpeed = speed;
-            BoxCollider2D.size = new Vector2((float)1, (float)1);
+            BoxCollider2D.size = new Vector2((float)0.2, (float)0.8);
+            BoxCollider2D.offset = new Vector2(0, (float)0.41);
         }
     }
 }

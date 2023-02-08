@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Btn_1 : MonoBehaviour
+public class MenuUi : MonoBehaviour
 {
     public GameObject subMenuSet;   // 내부 메뉴창
     public GameObject optionSet;   // 옵션창
@@ -17,18 +17,6 @@ public class Btn_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    Debug.Log("눌렀어");
-        //    if (menuSet.activeSelf)
-        //    {
-        //        menuSet.SetActive(false);
-        //    }
-        //    else
-        //    {
-        //        menuSet.SetActive(true);
-        //    }
-        //}
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Debug.Log("눌렀어");
