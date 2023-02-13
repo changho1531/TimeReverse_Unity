@@ -22,10 +22,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //left or a =-1 / right or d =1
-        float x = Input.GetAxisRaw("Horizontal");
+        
         //좌우 이동 방향 제어
-        Movement2D.Move(x);
+        Movement2D.Move3();
 
         //플레이어 점프
         if (Input.GetKeyDown(KeyCode.UpArrow))
