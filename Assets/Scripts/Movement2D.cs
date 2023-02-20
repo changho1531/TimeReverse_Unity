@@ -26,7 +26,7 @@ public class Movement2D : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
         //BoxCollider2D = GetComponent<BoxCollider2D>();
         CapsuleCollider2D = GetComponent<CapsuleCollider2D>();
-        animator = GetComponent<Animator>();
+        animator = gameObject.GetComponentInChildren<Animator>();
     }
 
     private void FixedUpdate()
