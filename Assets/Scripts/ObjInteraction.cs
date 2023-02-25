@@ -8,7 +8,6 @@ public class ObjInteraction : MonoBehaviour
     public float displayTime = 4.0f;
 
     //캔버스(대화상자) 활성화/비활성화
-
     public GameObject dialogBox;
     
     //대화 상자 표시

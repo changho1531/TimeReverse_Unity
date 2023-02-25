@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Movement2D Movement2D;
     private Skilment2D Skilment2D;
     private Rigidbody2D Rigidbody2D;
+    //Animator animator;                    //애니메이션
 
     //루비가 가만히 있을시 바라보는 방향 지정
     //지정해 주지 않으면 상태머신은 어느 방향을 취해야 할지 모른다
@@ -18,13 +19,15 @@ public class PlayerController : MonoBehaviour
         Movement2D = GetComponent<Movement2D>();
         Skilment2D = GetComponent<Skilment2D>();
         Rigidbody2D= GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
     {
         
         //좌우 이동 방향 제어
-        Movement2D.Move3();
+        Movement2D.Move2();
+
 
         //플레이어 점프
         if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -48,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
             if (Skilment2D.selectedSlot >= 3)
             {
-                Skilment2D.selectedSlot =0;
+                Skilment2D.selectedSlot = 0;
             }
         }
         //스킬 시전
@@ -61,10 +64,12 @@ public class PlayerController : MonoBehaviour
             else if (Skilment2D.selectedSlot == 1)
             {
                 Skilment2D.SecondSkill();
+
             }
             else if (Skilment2D.selectedSlot == 2)
             {
                 Skilment2D.ThirdSkill();
+
             }
         }
 
@@ -75,6 +80,7 @@ public class PlayerController : MonoBehaviour
             //루비의 발이 아닌 루비 중앙에서 수행, 루비가 바라보는 방향, 최대거리, 특정레이어만 실행을 위해 마스크에 속하지 않을시 무시
             //레이캐스트가 콜라이더와 닿는지 확인
             RaycastHit2D hit = Physics2D.Raycast(Rigidbody2D.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
+
 
             if (hit.collider != null)
             {
