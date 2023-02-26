@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Movement2D Movement2D;
     private Skilment2D Skilment2D;
     private Rigidbody2D Rigidbody2D;
+    test111 test111;
     //Animator animator;                    //애니메이션
 
     //루비가 가만히 있을시 바라보는 방향 지정
@@ -19,7 +20,7 @@ public class PlayerController : MonoBehaviour
         Movement2D = GetComponent<Movement2D>();
         Skilment2D = GetComponent<Skilment2D>();
         Rigidbody2D= GetComponent<Rigidbody2D>();
-        
+        test111 = GetComponent<test111>();
     }
 
     void Update()
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Skilment2D.selectedSlot == 0)
             {
-                Skilment2D.FirstSkill();
+                test111.FirstSkill();
             }
             else if (Skilment2D.selectedSlot == 1)
             {

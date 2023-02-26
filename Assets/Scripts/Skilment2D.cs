@@ -24,7 +24,6 @@ public class Skilment2D : MonoBehaviour
     float onw1;
     float onw2;
     float onw3;
-    GameObject[] obj123;
 
     // Start is called before the first frame update
     void Start()
@@ -68,33 +67,33 @@ public class Skilment2D : MonoBehaviour
     }
 
     //첫번째 스킬
-    public void FirstSkill()
-    {
-        if (skillOneCooldown && Movement2D.isObj)
-        {
-            Debug.Log("첫번째 스킬을 사용했습니다");
+    //public void FirstSkill()
+    //{
+    //    if (skillOneCooldown && Movement2D.isObj)
+    //    {
+    //        Debug.Log("첫번째 스킬을 사용했습니다");
 
 
-            Movement2D.isObj.transform.localScale = new Vector2((float)5.4,(float)5.4);
-            Movement2D.CapsuleCollider2D.offset = new Vector2(0, (float)-0.18);
+    //        Movement2D.isObj.transform.localScale = new Vector2((float)5.4,(float)5.4);
+    //        Movement2D.CapsuleCollider2D.offset = new Vector2(0, (float)-0.18);
 
-            skillOneCooldown = false;
-            onw1 = skillOne;
-        }
-        else
-        {
-            if(skillOneCooldown == false)
-            {
-                Debug.Log("첫번째 스킬은 쿨타임 입니다");
-            }
-            else if(Movement2D.isObj == false)
-            {
-                Debug.Log("스킬 사용 가능 지역이 아닙니다");
+    //        skillOneCooldown = false;
+    //        onw1 = skillOne;
+    //    }
+    //    else
+    //    {
+    //        if(skillOneCooldown == false)
+    //        {
+    //            Debug.Log("첫번째 스킬은 쿨타임 입니다");
+    //        }
+    //        else if(Movement2D.isObj == false)
+    //        {
+    //            Debug.Log("스킬 사용 가능 지역이 아닙니다");
 
-            }
+    //        }
 
-        }
-    }
+    //    }
+    //}
 
     //두번째 스킬
     public void SecondSkill()
